@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b16">
+  <meta name="description" content="Qusay Alquraan - Software Engineering Portfolio">
+  <title>Qusay Alquraan | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <script src="waves.js" defer></script>
+  <script src="language.js" defer></script>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a class="nav-brand" href="#home">QA<span>.</span></a>
+
+    <button id="language-toggle" class="language-toggle"
+      type="button" aria-label="Switch to Arabic">
+      AR
+    </button>
+
+    <button class="menu-toggle" id="menu-toggle"
+      type="button" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <ul id="nav-links">
+      <li><a href="#home" data-i18n="nav.home">Home</a></li>
+      <li><a href="#about" data-i18n="nav.about">About</a></li>
+      <li><a href="#education" data-i18n="nav.education">Education</a></li>
+      <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+      <li><a href="#certificates" data-i18n="nav.certificates">Certificates</a></li>
+      <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <canvas id="wave-canvas" aria-hidden="true"></canvas>
+    <div class="hero-shade"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          <span data-i18n="hero.kicker">SOFTWARE ENGINEERING GRADUATE</span>
+        </p>
+
+        <h1 data-i18n="hero.name">Qusay Alquraan</h1>
+        <h2 data-i18n="hero.role">Web &amp; Mobile Developer</h2>
+
+        <p class="hero-description" data-i18n="hero.description">
+          I build practical digital experiences with a focus on clean code,
+          thoughtful design, and continuous learning.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-i18n="hero.work">
+            Explore My Work ↗
+          </a>
+          <a href="Qusay-CV.pdf" class="btn btn-ghost" download data-i18n="hero.cv">
+            Download CV ↓
+          </a>
+        </div>
+
+        <div class="hero-meta">
+          <span data-i18n="hero.university">Software Engineering · JUST</span>
+          <span data-i18n="hero.location">Jordan</span>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/qus ayalquraan03t-spec"
+             class="social-link" target="_blank"
+             rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/"
+             class="social-link" target="_blank"
+             rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:qusayalquraan03t@gmail.com"
+             class="social-link">Email ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <div class="visual-glow"></div>
+
+        <img src="p1.jpg" alt="Qusay Alquraan"
+             class="profile-img"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+
+        <div class="profile-fallback" aria-hidden="true">QA</div>
+
+        <div class="floating-chip chip-top">
+          <span class="chip-dot"></span>
+          <span data-i18n="hero.availability">Open to opportunities</span>
+        </div>
+
+        <div class="floating-chip chip-bottom">
+          <span>&lt;/&gt;</span>
+          <span data-i18n="hero.purpose">Building with purpose</span>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-cue" href="#about" data-i18n="hero.scroll">
+      ↓ SCROLL TO EXPLORE
+    </a>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="about.kicker">GET TO KNOW ME</p>
+        <h2 data-i18n="about.title">About Me</h2>
+      </div>
+
+      <div class="about-panel">
+        <div class="about-mark">01 <span>/ ABOUT</span></div>
+        <p data-i18n="about.text">
+          Motivated Software Engineering graduate passionate about web and
+          mobile development, software engineering principles, and building
+          practical digital solutions.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="education.kicker">MY BACKGROUND</p>
+        <h2 data-i18n="education.title">Education</h2>
+      </div>
+
+      <article class="card education-card">
+        <div class="card-icon">✦</div>
+        <div>
+          <p class="card-kicker" data-i18n="education.degreeType">BACHELOR'S DEGREE · 2026</p>
+          <h3 data-i18n="education.degree">Bachelor of Software Engineering</h3>
+          <p class="muted" data-i18n="education.university">
+            Jordan University of Science and Technology (JUST)
+          </p>
+          <div class="inline-tags">
+            <span data-i18n="education.year">Graduated 2026</span>
+            <span data-i18n="education.grade">Grade: Very Good</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="skills.kicker">WHAT I WORK WITH</p>
+        <h2 data-i18n="skills.title">Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Java</span>
+        <span>C++</span>
+        <span>C#</span>
+        <span>ASP.NET Core</span>
+        <span>Flutter</span>
+        <span>SQL</span>
+        <span>Oracle Database</span>
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>OOP</span>
+        <span data-i18n="skills.problemSolving">Problem Solving</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="projects.kicker">SELECTED WORK</p>
+        <h2 data-i18n="projects.title">Featured Project</h2>
+      </div>
+
+      <article class="card project-card">
+        <div class="project-topline">
+          <span class="project-number">PROJECT / 01</span>
+          <span class="project-status">
+            <i></i>
+            <span data-i18n="projects.type">Graduation Project</span>
+          </span>
+        </div>
+
+        <div class="project-content">
+          <div class="project-symbol">&lt;/&gt;</div>
+          <h3 data-i18n="projects.name">Equipment Rental System</h3>
+
+          <p data-i18n="projects.description">
+            A mobile application built using Flutter to simplify equipment
+            rental. Users can browse available equipment, view details,
+            and submit rental requests.
+          </p>
+
+          <p data-i18n="projects.description2">
+            The system also includes an admin panel to manage equipment
+            and rental requests.
+          </p>
+
+          <div class="project-tags">
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Database Design</span>
+            <span>Mobile Development</span>
+          </div>
+
+          <a href="https://github.com/" class="text-link"
+             target="_blank" rel="noopener noreferrer"
+             data-i18n="projects.link">View project on GitHub ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="experience.kicker">LEARNING BY BUILDING</p>
+        <h2 data-i18n="experience.title">Experience</h2>
+      </div>
+
+      <article class="card experience-card">
+        <p class="card-kicker" data-i18n="experience.date">DEC 2025 — MAR 2026</p>
+        <h3 data-i18n="experience.role">ASP.NET Core 8 Trainee</h3>
+        <h4>Tuned Applications</h4>
+
+        <ul class="detail-list">
+          <li data-i18n="experience.item1">Practical training in ASP.NET Core 8 development.</li>
+          <li data-i18n="experience.item2">Worked with MVC architecture.</li>
+          <li data-i18n="experience.item3">Used Entity Framework Core and SQL databases.</li>
+          <li data-i18n="experience.item4">Applied OOP principles and clean code practices.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="certificates" class="section">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="certificates.kicker">CONTINUOUS LEARNING</p>
+        <h2 data-i18n="certificates.title">Certificates</h2>
+      </div>
+
+      <article class="card certificate-card">
+        <div class="certificate-icon">✧</div>
+        <div>
+          <p class="card-kicker" data-i18n="certificates.date">OCTOBER 2023</p>
+          <h3 data-i18n="certificates.name">C++ Course Certificate</h3>
+          <p class="muted" data-i18n="certificates.details">
+            32 hours of training · Beprogrammer.org
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="contact-panel">
+        <p class="section-kicker" data-i18n="contact.kicker">LET'S CONNECT</p>
+        <h2 data-i18n="contact.title">Have an opportunity in mind?</h2>
+        <p class="muted" data-i18n="contact.description">
+          I am interested in software development opportunities where I can
+          contribute, learn, and grow with a team.
+        </p>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:qusayalquraan03t@gmail.com">
+            <span data-i18n="contact.emailLabel">Email</span>
+            <strong>qusayalquraan03t@gmail.com</strong>
+          </a>
+
+          <a class="contact-link" href="tel:+962770051869">
+            <span data-i18n="contact.phoneLabel">Phone</span>
+            <strong>+962 77 005 1869</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="nav-brand" href="#home">QA<span>.</span></a>
+    <p data-i18n="footer.text">© 2026 Qusay Alquraan. Built with care.</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      const open = navLinks.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(open));
+    });
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+</body>
+</html>
