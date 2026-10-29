@@ -1,7 +1,7 @@
 
 (() => {
-  const button = document.getElementById("language-toggle");
-  if (!button) return;
+  const toggle = document.getElementById("language-toggle");
+  if (!toggle) return;
 
   const translations = {
     en: {
@@ -28,7 +28,7 @@
 
       "about.kicker": "GET TO KNOW ME",
       "about.title": "About Me",
-      "about.text": "Motivated Software Engineering graduate passionate about web and mobile development, software engineering principles, and building practical digital solutions. I enjoy learning new technologies and turning ideas into useful applications.",
+      "about.text": "Motivated Software Engineering graduate passionate about web and mobile development, software engineering principles, and building practical digital solutions.",
 
       "education.kicker": "MY BACKGROUND",
       "education.title": "Education",
@@ -76,7 +76,7 @@
 
     ar: {
       "nav.home": "الرئيسية",
-      "nav.about": "من أنا",
+      "nav.about": "نبذة عني",
       "nav.education": "التعليم",
       "nav.skills": "المهارات",
       "nav.projects": "المشاريع",
@@ -84,28 +84,28 @@
       "nav.certificates": "الشهادات",
       "nav.contact": "تواصل معي",
 
-      "hero.kicker": "خريج هندسة برمجيات",
+      "hero.kicker": "خريج هندسة البرمجيات",
       "hero.name": "قصي القرعان",
       "hero.role": "مطور ويب وتطبيقات موبايل",
-      "hero.description": "أعمل على تطوير حلول رقمية عملية، مع التركيز على كتابة كود نظيف وتصميم مدروس والتعلم المستمر.",
-      "hero.work": "استكشف مشاريعي ↗",
+      "hero.description": "أعمل على بناء حلول رقمية عملية مع التركيز على كتابة كود واضح، وتصميم مدروس، والتعلم المستمر.",
+      "hero.work": "استكشف أعمالي ↗",
       "hero.cv": "تحميل السيرة الذاتية ↓",
-      "hero.university": "هندسة البرمجيات · جامعة العلوم والتكنولوجيا",
+      "hero.university": "هندسة البرمجيات · JUST",
       "hero.location": "الأردن",
-      "hero.availability": "متاح للفرص الوظيفية",
-      "hero.purpose": "نبني حلولًا هادفة",
-      "hero.scroll": "↓ انتقل لاستكشاف الموقع",
+      "hero.availability": "متاح للفرص المهنية",
+      "hero.purpose": "أبني حلولًا لها هدف",
+      "hero.scroll": "↓ اكتشف المزيد",
 
       "about.kicker": "تعرّف عليّ",
       "about.title": "نبذة عني",
-      "about.text": "خريج هندسة برمجيات لدي شغف بتطوير مواقع الويب وتطبيقات الموبايل وتطبيق مبادئ هندسة البرمجيات وبناء حلول رقمية عملية. أستمتع بتعلم التقنيات الجديدة وتحويل الأفكار إلى تطبيقات مفيدة.",
+      "about.text": "خريج هندسة برمجيات طموح، مهتم بتطوير الويب وتطبيقات الموبايل ومبادئ هندسة البرمجيات وبناء حلول رقمية عملية.",
 
-      "education.kicker": "خلفيتي الأكاديمية",
+      "education.kicker": "خلفيتي التعليمية",
       "education.title": "التعليم",
       "education.degreeType": "درجة البكالوريوس · 2026",
       "education.degree": "بكالوريوس هندسة البرمجيات",
       "education.university": "جامعة العلوم والتكنولوجيا الأردنية",
-      "education.year": "سنة التخرج: 2026",
+      "education.year": "سنة التخرج 2026",
       "education.grade": "التقدير: جيد جدًا",
 
       "skills.kicker": "التقنيات التي أستخدمها",
@@ -113,89 +113,87 @@
       "skills.problemSolving": "حل المشكلات",
 
       "projects.kicker": "أعمال مختارة",
-      "projects.title": "أبرز المشاريع",
+      "projects.title": "المشروع المميز",
       "projects.type": "مشروع التخرج",
       "projects.name": "نظام تأجير المعدات",
-      "projects.description": "تطبيق موبايل تم تطويره باستخدام Flutter لتسهيل عملية تأجير المعدات. يمكن للمستخدمين استعراض المعدات المتاحة والاطلاع على تفاصيلها وإرسال طلبات التأجير.",
-      "projects.description2": "يتضمن النظام أيضًا لوحة تحكم للمسؤول لإدارة المعدات وطلبات التأجير.",
+      "projects.description": "تطبيق موبايل باستخدام Flutter لتسهيل تأجير المعدات. يمكن للمستخدمين استعراض المعدات المتاحة، وعرض تفاصيلها، وإرسال طلبات التأجير.",
+      "projects.description2": "يتضمن النظام أيضًا لوحة تحكم إدارية لإدارة المعدات وطلبات التأجير.",
       "projects.link": "عرض المشروع على GitHub ↗",
 
       "experience.kicker": "التعلم من خلال التطبيق",
-      "experience.title": "الخبرة العملية",
+      "experience.title": "الخبرة",
       "experience.date": "ديسمبر 2025 — مارس 2026",
       "experience.role": "متدرب ASP.NET Core 8",
       "experience.item1": "تدريب عملي على تطوير التطبيقات باستخدام ASP.NET Core 8.",
-      "experience.item2": "التعامل مع بنية MVC في تطوير الويب.",
+      "experience.item2": "العمل باستخدام معمارية MVC.",
       "experience.item3": "استخدام Entity Framework Core وقواعد بيانات SQL.",
-      "experience.item4": "تطبيق مبادئ البرمجة كائنية التوجه وكتابة كود منظم.",
+      "experience.item4": "تطبيق مبادئ البرمجة كائنية التوجه وممارسات كتابة الكود النظيف.",
 
       "certificates.kicker": "التعلم المستمر",
       "certificates.title": "الشهادات",
       "certificates.date": "أكتوبر 2023",
-      "certificates.name": "شهادة دورة البرمجة بلغة C++",
+      "certificates.name": "شهادة دورة C++",
       "certificates.details": "32 ساعة تدريبية · Beprogrammer.org",
 
-      "contact.kicker": "لنبقَ على تواصل",
+      "contact.kicker": "لنتواصل معًا",
       "contact.title": "هل لديك فرصة مناسبة؟",
-      "contact.description": "أبحث عن فرص في تطوير البرمجيات تتيح لي المساهمة في العمل والتعلم والتطور ضمن فريق.",
+      "contact.description": "أهتم بفرص تطوير البرمجيات التي أستطيع من خلالها المساهمة والتعلم والتطور ضمن فريق عمل.",
       "contact.emailLabel": "البريد الإلكتروني",
-      "contact.phoneLabel": "رقم الهاتف",
+      "contact.phoneLabel": "الهاتف",
 
-      "footer.text": "© 2026 قصي القرعان. تم تطوير الموقع بعناية."
+      "footer.text": "© 2026 قصي القرعان. صُنع باهتمام."
     }
   };
 
-  function applyLanguage(lang) {
-    const dictionary = translations[lang];
-    if (!dictionary) return;
+  function setLanguage(language) {
+    const selected = translations[language] ? language : "en";
 
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+    document.documentElement.lang = selected;
+    document.documentElement.dir = selected === "ar" ? "rtl" : "ltr";
 
     document.querySelectorAll("[data-i18n]").forEach(element => {
       const key = element.getAttribute("data-i18n");
+      const value = translations[selected][key];
 
-      if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
-        element.textContent = dictionary[key];
+      if (value !== undefined) {
+        element.textContent = value;
       }
     });
 
-    button.textContent = lang === "en" ? "AR" : "EN";
-
-    button.setAttribute(
-      "aria-label",
-      lang === "en" ? "Switch to Arabic" : "Switch to English"
-    );
-
-    button.setAttribute("aria-pressed", String(lang === "ar"));
-
-    document.title = lang === "ar"
+    document.title = selected === "ar"
       ? "قصي القرعان | معرض الأعمال"
       : "Qusay Alquraan | Portfolio";
 
+    toggle.textContent = selected === "ar" ? "EN" : "AR";
+    toggle.setAttribute(
+      "aria-label",
+      selected === "ar" ? "Switch to English" : "التبديل إلى العربية"
+    );
+
     try {
-      localStorage.setItem("portfolio-language", lang);
+      localStorage.setItem("portfolio-language", selected);
     } catch (error) {
-      // The language toggle still works if localStorage is unavailable.
+      // The page still works if local storage is unavailable.
     }
   }
-
-  button.addEventListener("click", () => {
-    const currentLanguage = document.documentElement.lang;
-    applyLanguage(currentLanguage === "en" ? "ar" : "en");
-  });
 
   let initialLanguage = "en";
 
   try {
     const savedLanguage = localStorage.getItem("portfolio-language");
-
     if (savedLanguage === "ar" || savedLanguage === "en") {
       initialLanguage = savedLanguage;
     }
   } catch (error) {
-    // English is the default language.
+    // Use English if local storage is unavailable.
   }
 
-  applyLanguage(initialLanguage);
+  toggle.addEventListener("click", () => {
+    const nextLanguage =
+      document.documentElement.lang === "ar" ? "en" : "ar";
+
+    setLanguage(nextLanguage);
+  });
+
+  setLanguage(initialLanguage);
 })();

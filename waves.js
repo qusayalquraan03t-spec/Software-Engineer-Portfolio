@@ -19,6 +19,8 @@
 
   const spacing = 16;
   const waveRows = 25;
+  const waveSpeed = 0.00055;
+  const secondaryWaveSpeed = 1.7;
 
   function resize() {
     width = canvas.clientWidth || window.innerWidth;
@@ -54,7 +56,9 @@
           height * 0.86 -
           row * spacing +
           Math.sin(phase) * 25 +
-          Math.sin(col * 0.025 - elapsed * 1.25) * 17;
+          Math.sin(
+            col * 0.025 - elapsed * secondaryWaveSpeed
+          ) * 17;
 
         if (y < height * 0.2 || y > height) continue;
 
@@ -81,7 +85,7 @@
       return;
     }
 
-    if (timestamp - lastFrame >= 33) {
+    if (timestamp - lastFrame >= 16) {
       const delta = lastFrame
         ? Math.min(timestamp - lastFrame, 50)
         : 0;
@@ -89,7 +93,7 @@
       lastFrame = timestamp;
 
       if (!reducedMotion.matches) {
-        elapsed += delta * 0.00032;
+        elapsed += delta * waveSpeed;
       }
 
       draw();
@@ -125,6 +129,8 @@
 
   if (reducedMotion.addEventListener) {
     reducedMotion.addEventListener("change", start);
+  } else if (reducedMotion.addListener) {
+    reducedMotion.addListener(start);
   }
 
   resize();

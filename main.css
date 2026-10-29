@@ -93,7 +93,7 @@ a {
   display: none;
 }
 
-/* Hero */
+/* Hero section */
 
 .hero {
   position: relative;
@@ -121,7 +121,11 @@ a {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(0deg, rgba(5, 11, 22, .6), transparent 65%);
+  background: linear-gradient(
+    0deg,
+    rgba(5, 11, 22, .6),
+    transparent 65%
+  );
 }
 
 .hero-inner {
@@ -241,7 +245,7 @@ a {
   text-decoration: none;
 }
 
-/* Image and decorations */
+/* Profile image and decorations */
 
 .hero-visual {
   min-width: 0;
@@ -468,33 +472,67 @@ a {
   background: rgba(81, 130, 190, .08);
 }
 
-/* Skills */
+/* Skills with technology logos */
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 16px;
 }
 
-.skills-grid span {
-  min-height: 58px;
-  padding: 13px 8px;
+.skill-card {
+  min-width: 0;
+  min-height: 135px;
+  padding: 18px 10px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 12px;
   text-align: center;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 14px;
   background: #0b1627;
   color: #c9d8eb;
-  font-size: .85rem;
-  transition: .2s;
+  transition: transform .25s ease, border-color .25s ease,
+    background .25s ease;
 }
 
-.skills-grid span:hover {
+.skill-card img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform .25s ease;
+}
+
+.skill-card span {
+  color: #c9d8eb;
+  font-size: .82rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.skill-card:hover {
   border-color: var(--blue);
-  background: rgba(56, 189, 248, .08);
-  transform: translateY(-3px);
+  background: rgba(56, 189, 248, .09);
+  transform: translateY(-5px);
+}
+
+.skill-card:hover img {
+  transform: scale(1.08);
+}
+
+.skill-card-text .skill-symbol {
+  display: block;
+  color: var(--blue);
+  font-size: 1.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+html[lang="ar"] .skill-card {
+  text-align: center;
 }
 
 /* Projects */
@@ -582,7 +620,11 @@ a {
 
 .contact-panel {
   padding: clamp(24px, 5vw, 48px);
-  background: radial-gradient(ellipse at top right, rgba(22, 136, 248, .13), transparent 55%), #0a1424;
+  background: radial-gradient(
+    ellipse at top right,
+    rgba(22, 136, 248, .13),
+    transparent 55%
+  ), #0a1424;
 }
 
 .contact-panel h2 {
@@ -699,7 +741,7 @@ html[lang="ar"] .eyebrow {
   letter-spacing: 0;
 }
 
-/* Responsive */
+/* Responsive design */
 
 @media (max-width: 900px) {
   .site-nav {
@@ -839,6 +881,21 @@ html[lang="ar"] .eyebrow {
 
   .skills-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .skill-card {
+    min-height: 115px;
+    padding: 14px 6px;
+  }
+
+  .skill-card img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .skill-card span {
+    font-size: .72rem;
   }
 
   .contact-links {
@@ -867,5 +924,10 @@ html[lang="ar"] .eyebrow {
   *::after {
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;
+  }
+
+  .skill-card,
+  .skill-card img {
+    transition: none;
   }
 }
