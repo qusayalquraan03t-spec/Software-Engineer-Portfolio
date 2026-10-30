@@ -27,6 +27,7 @@
     canvas.height = Math.floor(height * dpr);
 
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
     draw(reduceMotion ? 0 : frame);
   }
 
@@ -36,14 +37,24 @@
     const lines = 7;
 
     for (let j = 0; j < lines; j++) {
+
       ctx.beginPath();
 
       for (let x = 0; x <= width; x += 8) {
+
         const y =
           height * (0.42 + j * 0.055) +
-          Math.sin(x * 0.008 + time * 0.00045 + j * 0.55) *
-            (16 + j * 2) +
-          Math.cos(x * 0.003 + time * 0.00025) * 20;
+
+          Math.sin(
+            x * 0.008 +
+            time * 0.0012 +
+            j * 0.55
+          ) * (16 + j * 2) +
+
+          Math.cos(
+            x * 0.003 +
+            time * 0.0007
+          ) * 20;
 
         if (x === 0) {
           ctx.moveTo(x, y);
@@ -52,7 +63,9 @@
         }
       }
 
-      ctx.strokeStyle = `rgba(54, 151, 255, ${0.055 + j * 0.012})`;
+      ctx.strokeStyle =
+        `rgba(54, 151, 255, ${0.055 + j * 0.012})`;
+
       ctx.lineWidth = 1;
       ctx.stroke();
     }
@@ -60,6 +73,7 @@
 
   function animate(time) {
     frame = time;
+
     draw(time);
 
     if (!reduceMotion) {
@@ -67,11 +81,14 @@
     }
   }
 
-  window.addEventListener("resize", resize, { passive: true });
+  window.addEventListener("resize", resize, {
+    passive: true
+  });
 
   resize();
 
   if (!reduceMotion) {
     requestAnimationFrame(animate);
   }
+
 })();

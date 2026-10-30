@@ -11,12 +11,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="main.css">
 
   <script src="waves.js" defer></script>
   <script src="language.js" defer></script>
+  <script src="contact.js" defer></script>
 </head>
+
 <body>
+
+  <!-- Navigation -->
   <nav class="site-nav">
     <a class="nav-brand" href="#home">QA<span>.</span></a>
 
@@ -41,18 +46,23 @@
     </ul>
   </nav>
 
+  <!-- Hero -->
   <header class="hero" id="home">
+
     <canvas id="wave-canvas" aria-hidden="true"></canvas>
     <div class="hero-shade"></div>
 
     <div class="hero-inner">
+
       <div class="hero-copy">
+
         <p class="eyebrow">
           <span class="status-dot"></span>
           <span data-i18n="hero.kicker">SOFTWARE ENGINEERING GRADUATE</span>
         </p>
 
         <h1 data-i18n="hero.name">Qusay Alquraan</h1>
+
         <h2 data-i18n="hero.role">Web &amp; Mobile Developer</h2>
 
         <p class="hero-description" data-i18n="hero.description">
@@ -61,12 +71,15 @@
         </p>
 
         <div class="hero-actions">
+
           <a href="#projects" class="btn btn-primary" data-i18n="hero.work">
             Explore My Work ↗
           </a>
+
           <a href="Qusay-CV.pdf" class="btn btn-ghost" download data-i18n="hero.cv">
             Download CV ↓
           </a>
+
         </div>
 
         <div class="hero-meta">
@@ -77,13 +90,17 @@
         <div class="social-links">
           <a href="https://github.com/qusayalquraan03t-spec"
              target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+
           <a href="https://www.linkedin.com/"
              target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+
           <a href="mailto:qusayalquraan03t@gmail.com">Email ↗</a>
         </div>
+
       </div>
 
       <div class="hero-visual">
+
         <div class="visual-orbit orbit-one"></div>
         <div class="visual-orbit orbit-two"></div>
         <div class="visual-glow"></div>
@@ -102,188 +119,401 @@
           <span>&lt;/&gt;</span>
           <span data-i18n="hero.purpose">Building with purpose</span>
         </div>
+
       </div>
+
     </div>
 
     <a class="scroll-cue" href="#about" data-i18n="hero.scroll">
       ↓ SCROLL TO EXPLORE
     </a>
+
   </header>
 
   <main>
+
+    <!-- About -->
     <section id="about" class="section reveal">
+
       <div class="section-heading">
         <p class="section-kicker" data-i18n="about.kicker">GET TO KNOW ME</p>
         <h2 data-i18n="about.title">About Me</h2>
       </div>
 
       <div class="about-panel">
+
         <div class="about-mark">01 <span>/ ABOUT</span></div>
+
         <p data-i18n="about.text">
           Motivated Software Engineering graduate passionate about web and
           mobile development, software engineering principles, and building
           practical digital solutions.
         </p>
+
       </div>
+
     </section>
 
+    <!-- Education -->
     <section id="education" class="section reveal">
+
       <div class="section-heading">
         <p class="section-kicker" data-i18n="education.kicker">MY BACKGROUND</p>
         <h2 data-i18n="education.title">Education</h2>
       </div>
 
       <article class="card education-card">
+
         <div class="card-icon">✦</div>
+
         <div>
+
           <p class="card-kicker" data-i18n="education.degreeType">
             BACHELOR'S DEGREE · 2026
           </p>
-          <h3 data-i18n="education.degree">Bachelor of Software Engineering</h3>
+
+          <h3 data-i18n="education.degree">
+            Bachelor of Software Engineering
+          </h3>
+
           <p class="muted" data-i18n="education.university">
             Jordan University of Science and Technology (JUST)
           </p>
+
           <div class="inline-tags">
             <span data-i18n="education.year">Graduated 2026</span>
             <span data-i18n="education.grade">Grade: Very Good</span>
           </div>
+
         </div>
+
       </article>
+
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="section reveal">
+
       <div class="section-heading">
         <p class="section-kicker" data-i18n="skills.kicker">WHAT I WORK WITH</p>
         <h2 data-i18n="skills.title">Technical Skills</h2>
       </div>
 
       <div class="skills-grid">
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" loading="lazy"><span>HTML5</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" loading="lazy"><span>CSS3</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy"><span>JavaScript</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy"><span>Java</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" loading="lazy"><span>C++</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" loading="lazy"><span>C#</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="ASP.NET Core" loading="lazy"><span>ASP.NET Core</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy"><span>Flutter</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle Database" loading="lazy"><span>Oracle Database</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" loading="lazy"><span>Git</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" loading="lazy"><span>GitHub</span></div>
+
         <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" loading="lazy"><span>SQL / PostgreSQL</span></div>
+
       </div>
+
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="section reveal">
+
       <div class="section-heading">
         <p class="section-kicker" data-i18n="projects.kicker">SELECTED WORK</p>
         <h2 data-i18n="projects.title">Featured Project</h2>
       </div>
 
       <article class="card project-card">
+
         <div class="project-topline">
           <span class="project-number">PROJECT / 01</span>
-          <span class="project-status"><i></i><span data-i18n="projects.type">Graduation Project</span></span>
+
+          <span class="project-status">
+            <i></i>
+            <span data-i18n="projects.type">Graduation Project</span>
+          </span>
         </div>
 
-        
-<div class="project-gallery project-gallery-placeholder">
-  <div class="project-placeholder">
-    <span class="placeholder-icon">&lt;/&gt;</span>
-    <h4 data-i18n="projects.previewTitle">Project Preview</h4>
-    <p data-i18n="projects.previewText">
-      Screenshots will be added soon.
-    </p>
-    <span class="placeholder-badge">FLUTTER · DART</span>
-  </div>
-</div>
+        <div class="project-gallery project-gallery-placeholder">
 
+          <div class="project-placeholder">
+
+            <span class="placeholder-icon">&lt;/&gt;</span>
+
+            <h4 data-i18n="projects.previewTitle">Project Preview</h4>
+
+            <p data-i18n="projects.previewText">
+              Screenshots will be added soon.
+            </p>
+
+            <span class="placeholder-badge">FLUTTER · DART</span>
+
+          </div>
+
+        </div>
 
         <div class="project-content">
+
           <div class="project-symbol">&lt;/&gt;</div>
+
           <h3 data-i18n="projects.name">Equipment Rental System</h3>
+
           <p data-i18n="projects.description">
             A mobile application built using Flutter to simplify equipment
             rental. Users can browse available equipment, view details,
             and submit rental requests.
           </p>
+
           <p data-i18n="projects.description2">
             The system also includes an admin panel to manage equipment
             and rental requests.
           </p>
+
           <div class="project-tags">
-            <span>Flutter</span><span>Dart</span>
-            <span>Database Design</span><span>Mobile Development</span>
+            <span>Flutter</span>
+            <span>Dart</span>
+            <span>Database Design</span>
+            <span>Mobile Development</span>
           </div>
+
           <a href="https://github.com/qusayalquraan03t-spec"
              class="text-link" target="_blank" rel="noopener noreferrer"
-             data-i18n="projects.link">Explore GitHub profile ↗</a>
+             data-i18n="projects.link">
+            Explore GitHub profile ↗
+          </a>
+
           <p class="image-note" data-i18n="projects.imageNote">
             Replace these illustrative images with screenshots from your real app.
           </p>
+
         </div>
+
       </article>
+
     </section>
 
+    <!-- Experience -->
     <section id="experience" class="section reveal">
+
       <div class="section-heading">
         <p class="section-kicker" data-i18n="experience.kicker">LEARNING BY BUILDING</p>
         <h2 data-i18n="experience.title">Experience</h2>
       </div>
 
       <article class="card experience-card">
-        <p class="card-kicker" data-i18n="experience.date">DEC 2025 — MAR 2026</p>
+
+        <p class="card-kicker" data-i18n="experience.date">
+          DEC 2025 — MAR 2026
+        </p>
+
         <h3 data-i18n="experience.role">ASP.NET Core 8 Trainee</h3>
+
         <h4>Tuned Applications</h4>
+
         <ul class="detail-list">
           <li data-i18n="experience.item1">Practical training in ASP.NET Core 8 development.</li>
           <li data-i18n="experience.item2">Worked with MVC architecture.</li>
           <li data-i18n="experience.item3">Used Entity Framework Core and SQL databases.</li>
           <li data-i18n="experience.item4">Applied OOP principles and clean code practices.</li>
         </ul>
+
       </article>
+
     </section>
 
+    <!-- Certificates -->
     <section id="certificates" class="section reveal">
+
       <div class="section-heading">
         <p class="section-kicker" data-i18n="certificates.kicker">CONTINUOUS LEARNING</p>
         <h2 data-i18n="certificates.title">Certificates</h2>
       </div>
 
       <article class="card certificate-card">
+
         <div class="certificate-icon">✧</div>
+
         <div>
           <p class="card-kicker" data-i18n="certificates.date">C++ · 32 HOURS</p>
           <h3 data-i18n="certificates.name">C++ Course Certificate</h3>
-          <p class="muted" data-i18n="certificates.details">32 hours of training · Beprogrammer.org</p>
+          <p class="muted" data-i18n="certificates.details">
+            32 hours of training · Beprogrammer.org
+          </p>
         </div>
+
       </article>
+
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="section contact-section reveal">
-      <div class="contact-panel">
+
+      <div class="section-heading">
+
         <p class="section-kicker" data-i18n="contact.kicker">LET'S CONNECT</p>
-        <h2 data-i18n="contact.title">Have an opportunity in mind?</h2>
-        <p class="muted" data-i18n="contact.description">
-          I am interested in software development opportunities where I can
-          contribute, learn, and grow with a team.
+
+        <h2 data-i18n="contact.title">Get In Touch</h2>
+
+        <p class="muted contact-intro" data-i18n="contact.description">
+          Feel free to reach out using the details below or fill out the form.
         </p>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:qusayalquraan03t@gmail.com" data-i18n="contact.email">Email Me ↗</a>
-          <a class="btn btn-ghost" href="tel:+962770051869" data-i18n="contact.phone">Call Me</a>
-        </div>
-        <div class="contact-details">
-          <a href="mailto:qusayalquraan03t@gmail.com">qusayalquraan03t@gmail.com</a>
-          <a href="tel:+962770051869">+962 77 005 1869</a>
-          <span data-i18n="contact.location">Irbid, Jordan</span>
-        </div>
+
       </div>
+
+      <div class="contact-layout">
+
+        <!-- Contact Information -->
+        <div class="contact-info card">
+
+          <h3 data-i18n="contact.infoTitle">Contact Information</h3>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">✉️</div>
+
+            <div>
+              <span data-i18n="contact.emailLabel">Email</span>
+              <a href="mailto:qusayalquraan03t@gmail.com">
+                qusayalquraan03t@gmail.com
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">📞</div>
+
+            <div>
+              <span data-i18n="contact.phoneLabel">Phone</span>
+              <a href="tel:+962770051869">+962 77 005 1869</a>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">📍</div>
+
+            <div>
+              <span data-i18n="contact.locationLabel">Location</span>
+              <p data-i18n="contact.location">Irbid, Jordan</p>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">💻</div>
+
+            <div>
+              <span>GitHub</span>
+              <a href="https://github.com/qusayalquraan03t-spec"
+                 target="_blank" rel="noopener noreferrer">
+                GitHub Profile ↗
+              </a>
+            </div>
+
+          </div>
+
+          <div class="contact-item">
+
+            <div class="contact-icon">🔗</div>
+
+            <div>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/"
+                 target="_blank" rel="noopener noreferrer">
+                LinkedIn Profile ↗
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
+
+          <div class="form-group">
+            <label for="contact-name" data-i18n="contact.nameLabel">Name</label>
+
+            <input type="text" id="contact-name" name="name"
+              placeholder="Your name"
+              data-i18n-placeholder="contact.namePlaceholder"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" data-i18n="contact.emailLabel">Email</label>
+
+            <input type="email" id="contact-email" name="email"
+              placeholder="you@example.com"
+              data-i18n-placeholder="contact.emailPlaceholder"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject" data-i18n="contact.subjectLabel">Subject</label>
+
+            <input type="text" id="contact-subject" name="subject"
+              placeholder="What is this about?"
+              data-i18n-placeholder="contact.subjectPlaceholder"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" data-i18n="contact.messageLabel">Message</label>
+
+            <textarea id="contact-message" name="message" rows="6"
+              placeholder="Write your message here..."
+              data-i18n-placeholder="contact.messagePlaceholder"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="contact-submit">
+            <span data-i18n="contact.send">Send Message</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+
+          <p class="form-note" data-i18n="contact.formNote">
+            Your email app will open with the message ready to send.
+          </p>
+
+        </form>
+
+      </div>
+
     </section>
+
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
+
     <span>© <span id="year"></span> Qusay Alquraan</span>
-    <span data-i18n="footer.text">Built with care and continuous learning.</span>
+
+    <span data-i18n="footer.text">
+      Built with care and continuous learning.
+    </span>
+
     <a href="#home" data-i18n="footer.top">Back to top ↑</a>
+
   </footer>
+
 </body>
 </html>
