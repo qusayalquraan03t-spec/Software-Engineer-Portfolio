@@ -1,9 +1,5 @@
-
 const translations = {
-
   en: {
-
-    // Navigation
     "nav.home": "Home",
     "nav.about": "About",
     "nav.education": "Education",
@@ -13,7 +9,6 @@ const translations = {
     "nav.certificates": "Certificates",
     "nav.contact": "Contact",
 
-    // Hero
     "hero.kicker": "SOFTWARE ENGINEERING GRADUATE",
     "hero.name": "Qusay Alquraan",
     "hero.role": "Web & Mobile Developer",
@@ -26,12 +21,10 @@ const translations = {
     "hero.purpose": "Building with purpose",
     "hero.scroll": "↓ SCROLL TO EXPLORE",
 
-    // About
     "about.kicker": "GET TO KNOW ME",
     "about.title": "About Me",
     "about.text": "Motivated Software Engineering graduate passionate about web and mobile development, software engineering principles, and building practical digital solutions.",
 
-    // Education
     "education.kicker": "MY BACKGROUND",
     "education.title": "Education",
     "education.degreeType": "BACHELOR'S DEGREE · 2026",
@@ -40,11 +33,9 @@ const translations = {
     "education.year": "Graduated 2026",
     "education.grade": "Grade: Very Good",
 
-    // Skills
     "skills.kicker": "WHAT I WORK WITH",
     "skills.title": "Technical Skills",
 
-    // Projects
     "projects.kicker": "SELECTED WORK",
     "projects.title": "Featured Project",
     "projects.type": "Graduation Project",
@@ -59,7 +50,6 @@ const translations = {
     "projects.previewTitle": "Project Preview",
     "projects.previewText": "Screenshots will be added soon.",
 
-    // Experience
     "experience.kicker": "LEARNING BY BUILDING",
     "experience.title": "Experience",
     "experience.date": "DEC 2025 — MAR 2026",
@@ -69,22 +59,19 @@ const translations = {
     "experience.item3": "Used Entity Framework Core and SQL databases.",
     "experience.item4": "Applied OOP principles and clean code practices.",
 
-    // Certificates
     "certificates.kicker": "CONTINUOUS LEARNING",
     "certificates.title": "Certificates",
     "certificates.date": "C++ · 32 HOURS",
     "certificates.name": "C++ Course Certificate",
     "certificates.details": "32 hours of training · Beprogrammer.org",
 
-    // Contact
     "contact.kicker": "LET'S CONNECT",
-    "contact.title": "Get In Touch",
+    "contact.title": "Have an opportunity in mind?",
     "contact.description": "Feel free to reach out using the details below or fill out the form.",
     "contact.infoTitle": "Contact Information",
     "contact.emailLabel": "Email",
     "contact.phoneLabel": "Phone",
     "contact.locationLabel": "Location",
-    "contact.location": "Irbid, Jordan",
     "contact.nameLabel": "Name",
     "contact.subjectLabel": "Subject",
     "contact.messageLabel": "Message",
@@ -95,14 +82,11 @@ const translations = {
     "contact.send": "Send Message",
     "contact.formNote": "Your email app will open with the message ready to send.",
 
-    // Footer
     "footer.text": "Built with care and continuous learning.",
     "footer.top": "Back to top ↑"
   },
 
   ar: {
-
-    // Navigation
     "nav.home": "الرئيسية",
     "nav.about": "نبذة عني",
     "nav.education": "التعليم",
@@ -112,7 +96,6 @@ const translations = {
     "nav.certificates": "الشهادات",
     "nav.contact": "تواصل معي",
 
-    // Hero
     "hero.kicker": "خريج هندسة برمجيات",
     "hero.name": "قصي القرعان",
     "hero.role": "مطور ويب وتطبيقات موبايل",
@@ -125,12 +108,10 @@ const translations = {
     "hero.purpose": "أبني حلولًا لها هدف",
     "hero.scroll": "↓ انتقل لاستكشاف الموقع",
 
-    // About
     "about.kicker": "تعرّف عليّ",
     "about.title": "نبذة عني",
     "about.text": "خريج هندسة برمجيات مهتم بتطوير الويب وتطبيقات الموبايل، ومبادئ هندسة البرمجيات، وبناء حلول رقمية عملية تلبي احتياجات المستخدمين.",
 
-    // Education
     "education.kicker": "خلفيتي الأكاديمية",
     "education.title": "التعليم",
     "education.degreeType": "درجة البكالوريوس · 2026",
@@ -139,11 +120,9 @@ const translations = {
     "education.year": "سنة التخرج 2026",
     "education.grade": "التقدير: جيد جدًا",
 
-    // Skills
     "skills.kicker": "التقنيات التي أستخدمها",
     "skills.title": "المهارات التقنية",
 
-    // Projects
     "projects.kicker": "أعمال مختارة",
     "projects.title": "المشروع المميز",
     "projects.type": "مشروع التخرج",
@@ -158,7 +137,6 @@ const translations = {
     "projects.previewTitle": "معاينة المشروع",
     "projects.previewText": "ستُضاف صور التطبيق قريبًا.",
 
-    // Experience
     "experience.kicker": "التعلم من خلال التطبيق",
     "experience.title": "الخبرة العملية",
     "experience.date": "ديسمبر 2025 — مارس 2026",
@@ -168,22 +146,19 @@ const translations = {
     "experience.item3": "استخدام Entity Framework Core وقواعد بيانات SQL.",
     "experience.item4": "تطبيق مبادئ البرمجة كائنية التوجه وكتابة كود منظم.",
 
-    // Certificates
     "certificates.kicker": "التعلم المستمر",
     "certificates.title": "الشهادات",
     "certificates.date": "C++ · 32 ساعة",
     "certificates.name": "شهادة دورة C++",
     "certificates.details": "تدريب لمدة 32 ساعة · Beprogrammer.org",
 
-    // Contact
     "contact.kicker": "لنتواصل",
-    "contact.title": "تواصل معي",
+    "contact.title": "هل لديك فرصة مناسبة؟",
     "contact.description": "يمكنك التواصل معي باستخدام المعلومات أدناه أو تعبئة النموذج.",
     "contact.infoTitle": "معلومات التواصل",
     "contact.emailLabel": "البريد الإلكتروني",
     "contact.phoneLabel": "رقم الهاتف",
     "contact.locationLabel": "الموقع",
-    "contact.location": "إربد، الأردن",
     "contact.nameLabel": "الاسم",
     "contact.subjectLabel": "الموضوع",
     "contact.messageLabel": "الرسالة",
@@ -194,109 +169,82 @@ const translations = {
     "contact.send": "إرسال الرسالة",
     "contact.formNote": "سيتم فتح تطبيق البريد الإلكتروني والرسالة جاهزة للإرسال.",
 
-    // Footer
     "footer.text": "صُنع باهتمام وشغف بالتعلم المستمر.",
     "footer.top": "العودة للأعلى ↑"
   }
-
 };
 
 
+// Language and navigation
 (() => {
-
   const toggle = document.getElementById("language-toggle");
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
   const year = document.getElementById("year");
 
-  // Current year
   if (year) {
     year.textContent = new Date().getFullYear();
   }
 
-  // Language function
   function setLanguage(lang) {
-
     const dictionary = translations[lang] || translations.en;
 
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
     document.body.dir = lang === "ar" ? "rtl" : "ltr";
 
-    // Translate text
     document.querySelectorAll("[data-i18n]").forEach((element) => {
-
       const key = element.dataset.i18n;
 
       if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
         element.textContent = dictionary[key];
       }
-
     });
 
-    // Translate placeholders
     document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
-
       const key = element.dataset.i18nPlaceholder;
 
       if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
         element.placeholder = dictionary[key];
       }
-
     });
 
-    // Language button
     if (toggle) {
-
       toggle.textContent = lang === "en" ? "AR" : "EN";
 
       toggle.setAttribute(
         "aria-label",
         lang === "en" ? "Switch to Arabic" : "Switch to English"
       );
-
     }
 
-    // Save language
     try {
       localStorage.setItem("portfolio-language", lang);
     } catch (_) {}
-
   }
 
-  // Load saved language
   let currentLanguage = "en";
 
   try {
-
     const savedLanguage = localStorage.getItem("portfolio-language");
 
     if (savedLanguage === "ar" || savedLanguage === "en") {
       currentLanguage = savedLanguage;
     }
-
   } catch (_) {}
 
   setLanguage(currentLanguage);
 
-  // Language toggle
   if (toggle) {
-
     toggle.addEventListener("click", () => {
-
       currentLanguage = currentLanguage === "en" ? "ar" : "en";
-
       setLanguage(currentLanguage);
-
     });
-
   }
 
   // Mobile navigation
   if (menuToggle && navLinks) {
-
     menuToggle.addEventListener("click", () => {
-
       const isOpen = navLinks.classList.toggle("open");
 
       menuToggle.setAttribute("aria-expanded", String(isOpen));
@@ -307,23 +255,15 @@ const translations = {
       );
 
       menuToggle.textContent = isOpen ? "×" : "☰";
-
     });
 
     navLinks.querySelectorAll("a").forEach((link) => {
-
       link.addEventListener("click", () => {
-
         navLinks.classList.remove("open");
-
         menuToggle.setAttribute("aria-expanded", "false");
-
         menuToggle.textContent = "☰";
-
       });
-
     });
-
   }
 
   // Reveal cards and sections on scroll
@@ -332,40 +272,25 @@ const translations = {
   );
 
   revealItems.forEach((item, index) => {
-
     item.classList.add("reveal");
-
     item.style.transitionDelay = `${(index % 6) * 70}ms`;
-
   });
 
   if ("IntersectionObserver" in window) {
-
     const observer = new IntersectionObserver((entries, obs) => {
-
       entries.forEach((entry) => {
-
         if (entry.isIntersecting) {
-
           entry.target.classList.add("is-visible");
-
           obs.unobserve(entry.target);
-
         }
-
       });
-
     }, {
       threshold: 0.12,
       rootMargin: "0px 0px -35px 0px"
     });
 
     revealItems.forEach((item) => observer.observe(item));
-
   } else {
-
     revealItems.forEach((item) => item.classList.add("is-visible"));
-
   }
-
 })();

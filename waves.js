@@ -1,4 +1,3 @@
-
 (() => {
   const canvas = document.getElementById("wave-canvas");
 
@@ -37,20 +36,16 @@
     const lines = 7;
 
     for (let j = 0; j < lines; j++) {
-
       ctx.beginPath();
 
       for (let x = 0; x <= width; x += 8) {
-
         const y =
           height * (0.42 + j * 0.055) +
-
           Math.sin(
             x * 0.008 +
             time * 0.0012 +
             j * 0.55
           ) * (16 + j * 2) +
-
           Math.cos(
             x * 0.003 +
             time * 0.0007
@@ -73,7 +68,6 @@
 
   function animate(time) {
     frame = time;
-
     draw(time);
 
     if (!reduceMotion) {
@@ -90,5 +84,4 @@
   if (!reduceMotion) {
     requestAnimationFrame(animate);
   }
-
 })();
